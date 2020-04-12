@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700|Yanone+Kaffeesatz:wght@500&display=swap');
+
+.charsheet {
+  width: 840px;
+  font-family: PT Sans;
+  font-size: 13px;
+}
+
+.sheet-logo {
+  width: 20em;
+  margin-right: 1em;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+label {
+  color: #000;
+  float: none;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0 0.5em 0 0;
+  padding: 0;
+  text-align: left;
+  width: auto;
+}
+
+input[type=text] {
+  border: 0;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  flex: 1;
+  font-family: PT Sans;
+  font-size: 1.1em;
+  line-height: 1.4em;
+  margin: 0;
+  padding: 0 0 0 1em;
+  min-width: 0;
+  width: 0;
+}
+
+input[type=checkbox] {
+  flex: 1;
+}
+
+input.sheet-name {
+  font-size: 1.4em;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+input.sheet-concept {
+  font-size: 1.4em;
+  margin-top: 1em;
+  text-align: center;
+}
+
+span {
+  font-size: 1em;
+}
+
+.sheet-cell {
+  align-items: flex-end;
+  display: flex;
+  flex: 1;
+  padding-right: 2em;
+}
+
+.sheet-column {
+  align-self: flex-end;
+  flex: 1;
+}
+
+.sheet-grid {
+  display: flex;
+  padding: 0.5em 0 1em 2em;
+}
+
+/* Headers */
+
+.sheet-header {
+  padding: 2em 0 0.5em;
+}
+
+.sheet-header .sheet-cell {
+  align-items: center;
+  background: #c6c7c8;
+  border-radius: 1em;
+  color: #ffffff;
+  flex: 1;
+  font-family: Yanone Kaffeesatz;
+  font-size: 2.4em;
+  letter-spacing: 1px;
+  margin: 0 0.5em;
+  padding: 0 0.5em;
+}
+
+.sheet-header img {
+  height: 1.4em;
+}
+
+.sheet-header span {
+  margin-top: 0.1em;
+}
+
+/* Stats */
+
+.sheet-stats {
+  padding: 0;
+}
+
+.sheet-stats .sheet-cell {
+  align-items: center;
+}
+
+.sheet-stats label {
+  flex: 2;
+  font-weight: bold;
+  text-align: right;
+}
+
+.sheet-stats input {
+  font-size: 1.4em;
+  margin: 0.2em 0.3em;
+  padding: 0.2em 0;
+  text-align: center;
+}
+
+.sheet-stats input.sheet-stat {
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.sheet-stats span {
+  flex: 1;
+  color: #c6c7c8;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin: 0 0.4em;
+  text-align: center;
+}
+
+/* Traits */
+
+.sheet-trait {
+  padding: 0 0 1em 2em;
+}
+
+.sheet-trait .sheet-cell {
+  margin-top: 0.5em;
+}
+
+.sheet-trait label {
+  border-bottom: 1px solid black;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Equipment */
+
+.sheet-equipment {
+  font-size: 1.1em;
+  padding: 0.5em 0 0.5em 2em;
+}
+
+.sheet-equipment input {
+  padding: 0;
+  text-align: center;
+}
+
+.sheet-equipment > * {
+  flex: 8;
+  justify-content: center;
+}
+
+.sheet-equipment > :first-child {
+  flex: 3;
+}
+
+.sheet-equipment > :last-child {
+  flex: 1;
+}
+
+/* Powers */
+
+.sheet-powers {
+  font-size: 1.1em;
+  padding: 0.5em 0 0.5em 2em;
+}
+
+.sheet-powers input {
+  padding: 0;
+  text-align: center;
+}
+
+.sheet-powers > * {
+  justify-content: center;
+}
+
+.sheet-powers > :first-child {
+  flex: 2;
+}
+
+.sheet-powers > :last-child {
+  flex: 4;
+}
+
+/* Advancements */
+
+.sheet-advancements {
+  padding: 1em 0 1em 2em;
+}

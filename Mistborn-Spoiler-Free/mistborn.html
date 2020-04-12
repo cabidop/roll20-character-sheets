@@ -1,0 +1,151 @@
+<div class="grid">
+  <img class="logo" src="mistborn.png" />
+  <div class="column">
+    <div class="cell"><label>CHARACTER NAME</label> <input class="name" type="text" name="attr_character_name" /></div>
+    <div class="cell"><label>CONCEPT</label>        <input class="concept" type="text" name="attr_concept" /></div>
+  </div>
+</div>
+<div class="grid">
+  <div class="cell"><label>CREW NAME</label> <input type="text" name="attr_crew_name" /></div>
+  <div class="cell"><label>CAUSE</label>     <input type="text" name="attr_cause" /></div>
+</div>
+<div class="grid">
+  <div class="cell"><label>TARGET</label> <input type="text" name="attr_target" /></div>
+  <div class="cell"><label>METHOD</label> <input type="text" name="attr_method" /></div>
+</div>
+<div class="grid">
+  <div class="cell"><label>GENDER</label> <input type="text" name="attr_gender" /></div>
+  <div class="cell"><label>AGE</label>    <input type="text" name="attr_age" /></div>
+  <div class="cell"><label>HEIGHT</label> <input type="text" name="attr_height" /></div>
+  <div class="cell"><label>WEIGHT</label> <input type="text" name="attr_weight" /></div>
+</div>
+<div class="grid header">
+  <div class="cell"><img src="img/iron.svg" /><span>ATTRIBUTES</span></div>
+  <div class="cell"><img src="img/brass.svg" /><span>STANDINGS</span></div>
+  <div class="cell"><img src="img/pewter.svg" /><span>RESILIENCES</span></div>
+</div>
+<div class="grid stats">
+  <div class="column">
+    <div class="cell"><label></label>         <span>DICE</span>                                                 <span></span></div>
+    <div class="cell"><label>PHYSIQUE</label> <input class="stat" type="text" name="attr_physique" value="0" /> <span></span></div>
+    <div class="cell"><label>CHARM</label>    <input class="stat" type="text" name="attr_charm" value="0" />    <span></span></div>
+    <div class="cell"><label>WITS</label>     <input class="stat" type="text" name="attr_wits" value="0" />     <span></span></div>
+  </div>
+  <div class="column">
+    <div class="cell"><label></label>          <span>DICE</span>                                                  <span>SPENT</span></div>
+    <div class="cell"><label>RESOURCES</label> <input class="stat" type="text" name="attr_resources" value="0" /> <input type="text" name="attr_resources_spent" /></div>
+    <div class="cell"><label>INFLUENCE</label> <input class="stat" type="text" name="attr_influence" value="0" /> <input type="text" name="attr_influence_spent" /></div>
+    <div class="cell"><label>SPIRIT</label>    <input class="stat" type="text" name="attr_spirit" value="0" />    <input type="text" name="attr_spirit_spent" /></div>
+  </div>
+  <div class="column">
+    <div class="cell"><label></label>           <span>SCORE</span>                                                  <span>DAMAGE</span></div>
+    <div class="cell"><label>HEALTH</label>     <input class="stat" type="text" name="attr_health" value="0" />     <input type="text" name="attr_health_spent" /></div>
+    <div class="cell"><label>REPUTATION</label> <input class="stat" type="text" name="attr_reputation" value="0" /> <input type="text" name="attr_reputation_spent" /></div>
+    <div class="cell"><label>WILLPOWER</label>  <input class="stat" type="text" name="attr_willpower" value="0" />  <input type="text" name="attr_willpower_spent" /></div>
+  </div>
+</div>
+<div class="grid header">
+  <div class="cell"><img src="img/tin.svg" /><span>TRAITS & BURDENS</span></div>
+</div>
+<div class="grid trait">
+  <div class="column">
+    <div class="cell"><label>DRIVE:</label>       <input type="text" name="attr_drive" /></div>
+    <div class="cell"><label>PROFESSION:</label>  <input type="text" name="attr_profession" /></div>
+    <div class="cell"><label>SPECIALTY:</label>   <input type="text" name="attr_specialty" /></div>
+    <div class="cell"><label>FEATURE:</label>     <input type="text" name="attr_feature" /></div>
+    <div class="cell"><label>PERSONALITY:</label> <input type="text" name="attr_personality" /></div>
+  </div>
+  <div class="column">
+    <div class="cell"><input type="text" name="attr_trait_extra_1" /></div>
+    <div class="cell"><input type="text" name="attr_trait_extra_2" /></div>
+    <div class="cell"><input type="text" name="attr_trait_extra_3" /></div>
+    <div class="cell"><input type="text" name="attr_trait_extra_4" /></div>
+    <div class="cell"><input type="text" name="attr_trait_extra_5" /></div>
+  </div>
+</div>
+<div class="grid header">
+  <div class="cell"><img src="img/gold.svg" /><span>EQUIPMENT</span></div>
+</div>
+<div class="grid equipment">
+  <div class="cell"><span>ITEM</span></div>
+  <div class="cell"><span>RULES</span></div>
+  <div class="cell"><span>PROP</span></div>
+</div>
+<fieldset class="repeating_items">
+  <div class="grid equipment">
+    <div class="cell"><input type="text" name="attr_item_name" /></div>
+    <div class="cell"><input type="text" name="attr_item_rules" /></div>
+    <div class="cell"><input type="checkbox" name="attr_item_is_prop" /></div>
+  </div>
+</fieldset>
+<div class="grid header">
+  <div class="cell"><img src="img/bronze.svg" /><span>SECRETS KNOWN</span></div>
+</div>
+<fieldset class="repeating_secrets">
+  <div class="grid">
+    <div class="cell"><input type="text" name="attr_secret" /></div>
+  </div>
+</fieldset>
+<div class="grid header">
+  <div class="cell"><img src="img/copper.svg" /><span>ALLOMANCY</span></div>
+</div>
+<div class="grid powers">
+  <div class="cell"><span>METAL</span></div>
+  <div class="cell"><span>LEVEL</span></div>
+  <div class="cell"><span>CHARGES</span></div>
+  <div class="cell"><span>BURN RATE</span></div>
+  <div class="cell"><span>STUNTS</span></div>
+</div>
+<fieldset class="repeating_powers">
+<div class="grid powers">
+  <div class="cell"><input type="text" name="attr_power_name" /></div>
+  <div class="cell"><input type="text" name="attr_power_level" /></div>
+  <div class="cell"><input type="text" name="attr_power_charges" /></div>
+  <div class="cell"><input type="text" name="attr_power_burn_rate" /></div>
+  <div class="cell"><input type="text" name="attr_power_stunts" /></div>
+</div>
+</fieldset>
+<div class="grid header">
+  <div class="cell"><img src="img/zinc.svg" /><span>TRAGEDY</span></div>
+</div>
+<div class="grid">
+  <div class="cell"><input type="text" name="attr_tragedy" /></div>
+</div>
+<div class="grid header">
+  <div class="cell"><img src="img/steel.svg" /><span>DESTINY</span></div>
+</div>
+<div class="grid">
+  <div class="cell"><input type="text" name="attr_destiny" /></div>
+</div>
+<div class="grid header">
+  <div class="cell"><img src="img/atium.svg" /><span>ADVANCEMENTS</span></div>
+</div>
+<div class="grid advancements">
+  <div class="cell">
+    <input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" />
+    <input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" />
+    <input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" />
+    <input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" />
+    <input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" /><input type="checkbox" value="0" />
+  </div>
+</div>
+
+<script type="text/worker">
+  on("change:physique change:resources", function() {
+    getAttrs(["physique", "resources"], function(values) {
+      setAttrs({health: parseInt(values.physique) + parseInt(values.resources)})
+    })
+  })
+
+  on("change:charm change:influence", function() {
+    getAttrs(["charm", "influence"], function(values) {
+      setAttrs({reputation: parseInt(values.charm) + parseInt(values.influence)})
+    })
+  });
+
+  on("change:wits change:spirit", function() {
+    getAttrs(["wits", "spirit"], function(values) {
+      setAttrs({willpower: parseInt(values.wits) + parseInt(values.spirit)})
+    })
+  });
+</script>
