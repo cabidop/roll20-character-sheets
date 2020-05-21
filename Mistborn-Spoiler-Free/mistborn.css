@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700|Yanone+Kaffeesatz:wght@500&display=swap');
 
 .charsheet {
-  width: 840px;
   font-family: PT Sans;
-  font-size: 13px;
+  font-size: 12px;
+  max-width: 850px;
+  min-width: 750px;
 }
 
 .sheet-logo {
@@ -15,6 +16,24 @@ fieldset {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+button[type=roll].btn {
+  color: #000;
+  background: white;
+  border: 0;
+  border-radius: 0;
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 0 0.5em 0 0;
+  padding: 0;
+  text-align: left;
+  width: auto;
+}
+
+button[type=roll].btn::before {
+  content: "";
 }
 
 label {
@@ -36,7 +55,7 @@ input[type=text] {
   flex: 1;
   font-family: PT Sans;
   font-size: 1.1em;
-  line-height: 1.4em;
+  line-height: 1.3em;
   margin: 0;
   padding: 0 0 0 1em;
   min-width: 0;
@@ -94,18 +113,19 @@ span {
   color: #ffffff;
   flex: 1;
   font-family: Yanone Kaffeesatz;
-  font-size: 2.4em;
+  font-size: 2.2em;
+  line-height: 0;
   letter-spacing: 1px;
   margin: 0 0.5em;
-  padding: 0 0.5em;
+  padding: 0.1em 0.5em;
 }
 
 .sheet-header img {
-  height: 1.4em;
+  height: 1em;
 }
 
 .sheet-header span {
-  margin-top: 0.1em;
+  margin: 0.2em 0 0 0.2em;
 }
 
 /* Stats */
@@ -118,8 +138,8 @@ span {
   align-items: center;
 }
 
-.sheet-stats label {
-  flex: 2;
+.sheet-stats label, .sheet-stats button.btn {
+  flex: 3;
   font-weight: bold;
   text-align: right;
 }
@@ -151,21 +171,21 @@ span {
   padding: 0 0 1em 2em;
 }
 
-.sheet-trait .sheet-cell {
-  margin-top: 0.5em;
-}
-
 .sheet-trait label {
   border-bottom: 1px solid black;
   font-weight: bold;
   margin: 0;
 }
 
+.sheet-trait .sheet-cell {
+  margin-top: 0.5em;
+}
+
 /* Equipment */
 
 .sheet-equipment {
   font-size: 1.1em;
-  padding: 0.5em 0 0.5em 2em;
+  padding: 0.5em 1em 0.5em 2em;
 }
 
 .sheet-equipment input {
@@ -174,12 +194,13 @@ span {
 }
 
 .sheet-equipment > * {
-  flex: 8;
+  flex: 14;
   justify-content: center;
+  padding-right: 1em;
 }
 
 .sheet-equipment > :first-child {
-  flex: 3;
+  flex: 8;
 }
 
 .sheet-equipment > :last-child {
@@ -190,7 +211,7 @@ span {
 
 .sheet-powers {
   font-size: 1.1em;
-  padding: 0.5em 0 0.5em 2em;
+  padding: 0.5em 1em 0.5em 2em;
 }
 
 .sheet-powers input {
@@ -200,6 +221,7 @@ span {
 
 .sheet-powers > * {
   justify-content: center;
+  padding-right: 1em;
 }
 
 .sheet-powers > :first-child {
@@ -214,4 +236,27 @@ span {
 
 .sheet-advancements {
   padding: 1em 0 1em 2em;
+}
+
+/* Repeating buttons */
+
+.repcontrol {
+  text-align: right;
+}
+
+.repcontrol .repcontrol_add {
+  float: left;
+  margin: 0.5em 0 0 2em;
+}
+
+.repcontrol .repcontrol_edit {
+  float: none;
+  margin: 0.5em 2em 0 1em;
+}
+
+.repcontainer.editmode .repitem .itemcontrol {
+  left: -1em;
+  right: -1em;
+  width: auto;
+  height: auto;
 }

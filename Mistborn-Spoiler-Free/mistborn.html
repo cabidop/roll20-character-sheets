@@ -1,59 +1,62 @@
 <div class="grid">
-  <img class="logo" src="mistborn.png" />
+  <img class="logo" src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/logo.png" />
   <div class="column">
-    <div class="cell"><label>CHARACTER NAME</label> <input class="name" type="text" name="attr_character_name" /></div>
-    <div class="cell"><label>CONCEPT</label>        <input class="concept" type="text" name="attr_concept" /></div>
+    <div class="cell"><label>NOMBRE</label> <input class="name" type="text" name="attr_character_name" /></div>
+    <div class="cell"><label>CONCEPTO</label>        <input class="concept" type="text" name="attr_concept" /></div>
   </div>
 </div>
 <div class="grid">
-  <div class="cell"><label>CREW NAME</label> <input type="text" name="attr_crew_name" /></div>
-  <div class="cell"><label>CAUSE</label>     <input type="text" name="attr_cause" /></div>
+  <div class="cell"><label>BANDA</label> <input type="text" name="attr_crew_name" /></div>
+  <div class="cell"><label>CAUSA</label>     <input type="text" name="attr_cause" /></div>
 </div>
 <div class="grid">
-  <div class="cell"><label>TARGET</label> <input type="text" name="attr_target" /></div>
-  <div class="cell"><label>METHOD</label> <input type="text" name="attr_method" /></div>
+  <div class="cell"><label>OBJETIVO</label> <input type="text" name="attr_target" /></div>
+  <div class="cell"><label>MÉTODO</label> <input type="text" name="attr_method" /></div>
 </div>
 <div class="grid">
-  <div class="cell"><label>GENDER</label> <input type="text" name="attr_gender" /></div>
-  <div class="cell"><label>AGE</label>    <input type="text" name="attr_age" /></div>
-  <div class="cell"><label>HEIGHT</label> <input type="text" name="attr_height" /></div>
-  <div class="cell"><label>WEIGHT</label> <input type="text" name="attr_weight" /></div>
+  <div class="cell"><label>GÉNERO</label> <input type="text" name="attr_gender" /></div>
+  <div class="cell"><label>EDAD</label>    <input type="text" name="attr_age" /></div>
+  <div class="cell"><label>ALTURA</label> <input type="text" name="attr_height" /></div>
+  <div class="cell"><label>PESO</label> <input type="text" name="attr_weight" /></div>
 </div>
 <div class="grid header">
-  <div class="cell"><img src="img/iron.svg" /><span>ATTRIBUTES</span></div>
-  <div class="cell"><img src="img/brass.svg" /><span>STANDINGS</span></div>
-  <div class="cell"><img src="img/pewter.svg" /><span>RESILIENCES</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/iron.png" /><span>ATRIBUTOS</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/brass.png" /><span>PRESTIGIO</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/pewter.png" /><span>RESISTENCIAS</span></div>
 </div>
 <div class="grid stats">
   <div class="column">
-    <div class="cell"><label></label>         <span>DICE</span>                                                 <span></span></div>
-    <div class="cell"><label>PHYSIQUE</label> <input class="stat" type="text" name="attr_physique" value="0" /> <span></span></div>
-    <div class="cell"><label>CHARM</label>    <input class="stat" type="text" name="attr_charm" value="0" />    <span></span></div>
-    <div class="cell"><label>WITS</label>     <input class="stat" type="text" name="attr_wits" value="0" />     <span></span></div>
+    <div class="cell"><label></label>                                                <span>DADOS</span>                                                 <span></span></div>
+    <div class="cell"><button type="roll" value="@{roll_physique}">CONSTITUCIÓN</button> <input class="stat" type="text" name="attr_physique" value="0" /> <span></span></div>
+    <div class="cell"><button type="roll" value="@{roll_charm}">CARISMA</button>       <input class="stat" type="text" name="attr_charm" value="0" />    <span></span></div>
+    <div class="cell"><button type="roll" value="@{roll_wits}">INGENIO</button>         <input class="stat" type="text" name="attr_wits" value="0" />     <span></span></div>
   </div>
   <div class="column">
-    <div class="cell"><label></label>          <span>DICE</span>                                                  <span>SPENT</span></div>
-    <div class="cell"><label>RESOURCES</label> <input class="stat" type="text" name="attr_resources" value="0" /> <input type="text" name="attr_resources_spent" /></div>
-    <div class="cell"><label>INFLUENCE</label> <input class="stat" type="text" name="attr_influence" value="0" /> <input type="text" name="attr_influence_spent" /></div>
-    <div class="cell"><label>SPIRIT</label>    <input class="stat" type="text" name="attr_spirit" value="0" />    <input type="text" name="attr_spirit_spent" /></div>
+    <div class="cell"><label></label>                                                  <span>DADOS</span>                                                  <span>GASTO</span></div>
+    <div class="cell"><button type="roll" value="@{roll_resources}">RECURSOS</button> <input class="stat" type="text" name="attr_resources" value="0" /> <input type="text" name="attr_resources_spent" /></div>
+    <div class="cell"><button type="roll" value="@{roll_influence}">INFLUENCIA</button> <input class="stat" type="text" name="attr_influence" value="0" /> <input type="text" name="attr_influence_spent" /></div>
+    <div class="cell"><button type="roll" value="@{roll_spirit}">ESPÍRITU</button>       <input class="stat" type="text" name="attr_spirit" value="0" />    <input type="text" name="attr_spirit_spent" /></div>
   </div>
   <div class="column">
-    <div class="cell"><label></label>           <span>SCORE</span>                                                  <span>DAMAGE</span></div>
-    <div class="cell"><label>HEALTH</label>     <input class="stat" type="text" name="attr_health" value="0" />     <input type="text" name="attr_health_spent" /></div>
-    <div class="cell"><label>REPUTATION</label> <input class="stat" type="text" name="attr_reputation" value="0" /> <input type="text" name="attr_reputation_spent" /></div>
-    <div class="cell"><label>WILLPOWER</label>  <input class="stat" type="text" name="attr_willpower" value="0" />  <input type="text" name="attr_willpower_spent" /></div>
+    <div class="cell"><label></label>           <span>ACTUAL</span>                                                                                                      <span>DAÑO</span></div>
+    <div class="cell"><label>SALUD</label>     <input class="stat" type="text" name="attr_health" value="@{physique}+@{resources}-(@{resources_spent}+0)-(@{health_spent}+0)" disabled />  <input type="text" name="attr_health_spent" /></div>
+    <div class="cell"><label>REPUTACIÓN</label> <input class="stat" type="text" name="attr_reputation" value="@{charm}+@{influence}-(@{influence_spent}+0)-(@{reputation_spent}+0)" disabled /> <input type="text" name="attr_reputation_spent" /></div>
+    <div class="cell"><label>VOLUNTAD</label>  <input class="stat" type="text" name="attr_willpower" value="@{wits}+@{spirit}-(@{spirit_spent}+0)-(@{willpower_spent}+0)" disabled />         <input type="text" name="attr_willpower_spent" /></div>
+    <input type="hidden" name="attr_health_max" value="@{physique}+@{resources}-(@{resources_spent}+0)" />
+    <input type="hidden" name="attr_reputation_max" value="@{charm}+@{influence}-(@{influence_spent}+0)" />
+    <input type="hidden" name="attr_willpower_max" value="@{wits}+@{spirit}-(@{spirit_spent}+0)" />
   </div>
 </div>
 <div class="grid header">
-  <div class="cell"><img src="img/tin.svg" /><span>TRAITS & BURDENS</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/tin.png" /><span>RASGOS</span></div>
 </div>
 <div class="grid trait">
   <div class="column">
-    <div class="cell"><label>DRIVE:</label>       <input type="text" name="attr_drive" /></div>
-    <div class="cell"><label>PROFESSION:</label>  <input type="text" name="attr_profession" /></div>
-    <div class="cell"><label>SPECIALTY:</label>   <input type="text" name="attr_specialty" /></div>
-    <div class="cell"><label>FEATURE:</label>     <input type="text" name="attr_feature" /></div>
-    <div class="cell"><label>PERSONALITY:</label> <input type="text" name="attr_personality" /></div>
+    <div class="cell"><label>MOTIVACIÓN:</label>       <input type="text" name="attr_drive" /></div>
+    <div class="cell"><label>PROFESIÓN:</label>  <input type="text" name="attr_profession" /></div>
+    <div class="cell"><label>ESPECIALIDAD:</label>   <input type="text" name="attr_specialty" /></div>
+    <div class="cell"><label>FÍSICO:</label>     <input type="text" name="attr_feature" /></div>
+    <div class="cell"><label>PERSONALIDAD:</label> <input type="text" name="attr_personality" /></div>
   </div>
   <div class="column">
     <div class="cell"><input type="text" name="attr_trait_extra_1" /></div>
@@ -64,11 +67,11 @@
   </div>
 </div>
 <div class="grid header">
-  <div class="cell"><img src="img/gold.svg" /><span>EQUIPMENT</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/gold.png" /><span>EQUIPO</span></div>
 </div>
 <div class="grid equipment">
-  <div class="cell"><span>ITEM</span></div>
-  <div class="cell"><span>RULES</span></div>
+  <div class="cell"><span>OBJETO</span></div>
+  <div class="cell"><span>REGLAS</span></div>
   <div class="cell"><span>PROP</span></div>
 </div>
 <fieldset class="repeating_items">
@@ -79,7 +82,7 @@
   </div>
 </fieldset>
 <div class="grid header">
-  <div class="cell"><img src="img/bronze.svg" /><span>SECRETS KNOWN</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/bronze.png" /><span>SECRETOS</span></div>
 </div>
 <fieldset class="repeating_secrets">
   <div class="grid">
@@ -87,14 +90,14 @@
   </div>
 </fieldset>
 <div class="grid header">
-  <div class="cell"><img src="img/copper.svg" /><span>ALLOMANCY</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/copper.png" /><span>ALOMANCIA</span></div>
 </div>
 <div class="grid powers">
   <div class="cell"><span>METAL</span></div>
-  <div class="cell"><span>LEVEL</span></div>
-  <div class="cell"><span>CHARGES</span></div>
-  <div class="cell"><span>BURN RATE</span></div>
-  <div class="cell"><span>STUNTS</span></div>
+  <div class="cell"><span>NIVEL</span></div>
+  <div class="cell"><span>CARGAS</span></div>
+  <div class="cell"><span>QUEMADO</span></div>
+  <div class="cell"><span>PROEZAS</span></div>
 </div>
 <fieldset class="repeating_powers">
 <div class="grid powers">
@@ -106,19 +109,19 @@
 </div>
 </fieldset>
 <div class="grid header">
-  <div class="cell"><img src="img/zinc.svg" /><span>TRAGEDY</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/zinc.png" /><span>TRAGEDIA</span></div>
 </div>
 <div class="grid">
   <div class="cell"><input type="text" name="attr_tragedy" /></div>
 </div>
 <div class="grid header">
-  <div class="cell"><img src="img/steel.svg" /><span>DESTINY</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/steel.png" /><span>DESTINO</span></div>
 </div>
 <div class="grid">
   <div class="cell"><input type="text" name="attr_destiny" /></div>
 </div>
 <div class="grid header">
-  <div class="cell"><img src="img/atium.svg" /><span>ADVANCEMENTS</span></div>
+  <div class="cell"><img src="https://raw.githubusercontent.com/cabidop/roll20-character-sheets/mistborn-spoiler-free/Mistborn-Spoiler-Free/img/atium.png" /><span>AVANCES</span></div>
 </div>
 <div class="grid advancements">
   <div class="cell">
@@ -131,21 +134,19 @@
 </div>
 
 <script type="text/worker">
-  on("change:physique change:resources", function() {
-    getAttrs(["physique", "resources"], function(values) {
-      setAttrs({health: parseInt(values.physique) + parseInt(values.resources)})
+  on("sheet:opened", function() {
+    setAttrs({
+      emas: "/em tira:<br>",
+      roll1: "?{Modificador|+0}",
+      roll2: "\n/roll (",
+      roll3: "?{Modificador|+0})d6sd>6cf<0",
+      roll_physique: "@{emas} Constitución @{roll1} ([[@{physique}@{roll1}]] dados) @{roll2}@{physique}@{roll3}",
+      roll_charm: "@{emas} Carisma @{roll1} ([[@{charm}@{roll1}]] dados) @{roll2}@{charm}@{roll3}",
+      roll_wits: "@{emas} Ingenio @{roll1} ([[@{wits}@{roll1}]] dados) @{roll2}@{wits}@{roll3}",
+      roll_resources: "@{emas} Recursos @{roll1} ([[@{resources}-(@{resources_spent}+0)@{roll1}]] dados) @{roll2}@{resources}-(@{resources_spent}+0)@{roll3}",
+      roll_influence: "@{emas} Influencia @{roll1} ([[@{influence}-(@{influence_spent}+0)@{roll1}]] dados) @{roll2}@{influence}-(@{influence_spent}+0)@{roll3}",
+      roll_spirit: "@{emas} Espíritu @{roll1} ([[@{spirit}-(@{spirit_spent}+0)@{roll1}]] dados) @{roll2}@{spirit}-(@{spirit_spent}+0)@{roll3}"
     })
   })
-
-  on("change:charm change:influence", function() {
-    getAttrs(["charm", "influence"], function(values) {
-      setAttrs({reputation: parseInt(values.charm) + parseInt(values.influence)})
-    })
-  });
-
-  on("change:wits change:spirit", function() {
-    getAttrs(["wits", "spirit"], function(values) {
-      setAttrs({willpower: parseInt(values.wits) + parseInt(values.spirit)})
-    })
-  });
 </script>
+
